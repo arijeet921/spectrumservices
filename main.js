@@ -38,8 +38,8 @@
             margin: 20,
 navText: [
     '<div style="display: flex; align-items: center; gap: 10px;">' +
-        '<i class="ri-arrow-left-circle-fill" style="font-size: 2rem;"></i>' +
-        '<i class="ri-arrow-right-circle-fill" style="font-size: 2rem;"></i>' +
+        '<i class="ri-arrow-left-circle-fill" style="font-size: 2rem; color:#fff"></i>' +
+        '<i class="ri-arrow-right-circle-fill" style="font-size: 2rem; color:#fff"></i>' +
     '</div>'
 ],
             responsive: {
@@ -91,3 +91,5 @@ navText: [
             count(0, counter[j], j, suffixes[j]);
         }
     });
+
+ 
