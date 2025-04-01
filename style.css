@@ -168,7 +168,7 @@ display: none;
 .large-img {
     width: 90%;
     border-radius: 10px;
-    height: 450px;
+    height: auto;
     object-fit: cover;
 }
 
@@ -176,11 +176,12 @@ display: none;
     position: absolute;
     top: 35%;
     right: 2px;
-    width: 250px;
+    width: 300px;
     height: 300px;
     border-radius: 10px;
     box-shadow: 0 0 0 8px white;
     object-fit: cover;
+    
 }
 
 @media (max-width: 780px) {
@@ -211,7 +212,6 @@ display: none;
 
 .about-info {
     margin-top: 5rem;
-    /* Default margin-top */
 }
 
 @media screen and (min-width: 380px) and (max-width: 700px) {
@@ -224,11 +224,50 @@ display: none;
     border: 1px solid #bfa172;
     border-radius: 50px;
     padding: 10px 0;
-    /* Remove padding on x-axis (left and right) */
     margin: 5px;
-    /* Add margin to create a gap between boxes */
+}
+.why-choose-us p{
+    font-size: 1.1rem;
+    background-color: #00415a;
+    color: #ffffff;
+    text-align: center;
+    padding: 8px;
+    border-radius: 20px;
 }
 
+/* why choose us listing section start */
+
+.why-choose-listing-section-start ul {
+    list-style: none;
+    padding-left: 0;
+    
+}
+.why-choose-listing-section-start li {
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 8px;
+}
+.why-choose-listing-section-start li:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 5px;
+    width: 25px;
+    height: 25px;
+    background-image: url('/img/listing-icon.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    
+}
+.outline-text {
+    color: rgb(0, 65, 90) !important;
+    text-shadow: 
+        -1px -1px 0 white,
+        1px -1px 0 white,
+        -1px 1px 0 white,
+        1px 1px 0 white;
+}
+/* why choose us listing section end */
 /* .about us body section end */
 
 /* what we offer for you */
@@ -333,8 +372,9 @@ display: none;
     display: block;
     width: 100%;
     height: auto;
-    border-radius: 30px;
+    border-radius: 10px;
     transition: transform 0.5s ease-in-out;
+  
 }
 
 .image-container:hover img {
@@ -910,6 +950,7 @@ display: none;
     background-position: center;
     background-repeat: no-repeat;
     padding: 50px 0; 
+  
     
 }
 
@@ -1199,3 +1240,235 @@ display: none;
 }
 
 /* !About us section style end */
+
+/*? service section start styling */
+
+.main-service-body{
+    padding-top: 5rem ;    
+}
+.main-service-body p{
+    text-align: center;
+    font-size: 35px;
+    position: relative;
+}
+
+
+.what-we-do p {
+    position: relative;
+    text-align: center;
+    margin: 20px 0;
+    padding: 0 20px; 
+    font-size: 30px;
+}
+
+.what-we-do p::before,
+.what-we-do p::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 35%; 
+    height: 1px;
+    background: #000;
+}
+
+.what-we-do p::before {
+    left: 0;
+}
+
+.what-we-do p::after {
+    right: 0;
+}
+
+@media (max-width: 768px) {
+    .what-we-do p::before,
+    .what-we-do p::after {
+        width: 20%; 
+    }
+
+    .what-we-do p {
+        padding: 0 30px; 
+    }
+}
+
+@media (max-width: 480px) {
+    .what-we-do p::before,
+    .what-we-do p::after {
+        width: 10%; 
+    }
+
+    .what-we-do p {
+        white-space: nowrap; 
+    }
+}
+/* Base Card Styles */
+.service-card {
+    width: 100%;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    margin-bottom: 0;
+}
+
+.featured-card {
+    height: 300px; 
+}
+
+
+.sidebar-card {
+    height: 100%; 
+    min-height: 300px; 
+}
+
+
+.service-card img,
+.service-card-one img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+
+@media (max-width: 992px) {
+    .featured-card {
+        height: 350px;
+    }
+    .sidebar-card {
+        min-height: 300px;
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .service-card {
+        height: 250px !important; 
+    }
+}
+
+.image-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.image-overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 4rem;
+    font-weight: 800;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    letter-spacing: 2px;
+}
+
+@media (max-width: 1200px) {
+    .image-overlay-text {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 992px) {
+    .image-overlay-text {
+        font-size: 2.2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .image-overlay-text {
+        font-size: 1.8rem;
+        letter-spacing: 1px;
+    }
+}
+
+@media (max-width: 576px) {
+    .image-overlay-text {
+        font-size: 1.5rem;
+        padding: 0 10px;
+    }
+}
+
+
+@media (max-width: 400px) {
+    .image-overlay-text {
+        font-size: 1.2rem;
+    }
+}
+.service-card:hover img{
+    opacity: 0.3;
+    transition: all 0.3S ease-in-out;
+}
+.service-card:hover .image-overlay-text {
+    color: #195c77; 
+    text-shadow: none;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Base Icon Styles */
+.service-icon-container {
+    background-color: #f3faff;
+    padding: 0.8rem 0.8rem;
+    border-radius: 100px;
+    text-align: center;
+    transition: all 0.3s ease;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.service-title{
+    font-weight: 600;
+    font-size: 1rem;
+    text-transform: uppercase;
+    line-height: normal;
+    text-align: left;
+    margin-left: 13px;
+}
+.service-icon {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+}
+
+
+.service-icon-container:hover .service-icon {
+    transform: scale(1.1);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 992px) {
+    .service-icon {
+        width: 70px;
+        height: 70px;
+    }
+}
+
+@media (max-width: 768px) {
+    .service-icon {
+        width: 60px;
+        height: 60px;
+    }
+    .service-icon-container {
+        padding: 1rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .service-icon {
+        width: 50px;
+        height: 50px;
+    }
+    .service-icon-container {
+        padding: 0.75rem;
+    }
+}
+
+.service-headline{
+    font-size: 2rem;
+}
+
+/* ?service section end styling */
