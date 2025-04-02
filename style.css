@@ -945,7 +945,7 @@ display: none;
 /* Background image and overlay styles */
 .background-overlay {
     position: relative;
-    background-image: url('/img/gallery-image/gallery-image-1\ \(6\).jpeg'); 
+    background-image: url('./img/gallery-image/gallery-image-1\ \(6\).jpeg'); 
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -997,7 +997,7 @@ display: none;
 /* contact us full style section start */
 
 .contact-header-cover {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/img/balcony.jpg) center center no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./img/balcony.jpg) center center no-repeat;
     background-size: cover;
     animation: moveBackground 20s linear infinite;
 }
