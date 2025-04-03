@@ -237,28 +237,7 @@ display: none;
 
 /* why choose us listing section start */
 
-.why-choose-listing-section-start ul {
-    list-style: none;
-    padding-left: 0;
-    
-}
-.why-choose-listing-section-start li {
-    position: relative;
-    padding-left: 30px;
-    margin-bottom: 8px;
-}
-.why-choose-listing-section-start li:before {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 5px;
-    width: 25px;
-    height: 25px;
-    background-image: url('./img/listing-icon.png');
-    background-size: contain;
-    background-repeat: no-repeat;
-    
-}
+
 .outline-text {
     color: rgb(0, 65, 90) !important;
     text-shadow: 
