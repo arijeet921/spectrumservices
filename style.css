@@ -317,6 +317,7 @@ display: none;
     position: relative;
     display: inline-block;
     padding-top: 10px;
+    font-size: 20px;
 }
 
 .pbmit-featured-wrapper img {
