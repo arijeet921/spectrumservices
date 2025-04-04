@@ -21,9 +21,7 @@ html {
 
 }
 
-.content-wrapper p{
-    text-align: justify;
-}
+
 .nav-link {
     position: relative;
     display: inline-block;
