@@ -27,17 +27,21 @@ html {
     position: relative;
     display: inline-block;
     padding: 5px 20px;
-    border: 2px solid transparent;
+    border-bottom: 1px solid transparent;
     transition: color 0.3s ease-in-out;
     font-weight: 600;
 
 }
 
+.nav-link.active {
+    border: 1px solid black;
+    border-radius: 8px;
+}
 .nav-link::before {
     content: "";
     position: absolute;
     inset: 0;
-    border: 2px solid black;
+    border-bottom: 2px solid black;
     transform: scaleX(0);
     transform-origin: left;
     transition: transform 0.4s ease-in-out;
