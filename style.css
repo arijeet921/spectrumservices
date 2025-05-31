@@ -93,8 +93,7 @@ html {
 }
 
 .logo-x img {
-    max-width: 200px;
-    mix-blend-mode: color-burn;
+    max-width: 150px;
 }
 
 /* navbar styling end */
